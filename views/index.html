@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> WeChat TypeScript sample </title>
+</head>
+<body>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript">
+    wx.config({
+        debug: false,
+        appId: '<%=appId%>',
+        timestamp: '<%=timestamp%>',
+        nonceStr: '<%=nonceStr%>',
+        signature: '<%=signature%>',
+        jsApiList: [
+            'checkJsApi',
+            'onMenuShareTimeline',
+            'onMenuShareAppMessage',
+            'onMenuShareQQ',
+            'onMenuShareWeibo',
+            'onMenuShareQZone',
+            'hideMenuItems',
+            'showMenuItems',
+            'hideAllNonBaseMenuItem',
+            'showAllNonBaseMenuItem',
+            'translateVoice',
+            'startRecord',
+            'stopRecord',
+            'onVoiceRecordEnd',
+            'playVoice',
+            'onVoicePlayEnd',
+            'pauseVoice',
+            'stopVoice',
+            'uploadVoice',
+            'downloadVoice',
+            'chooseImage',
+            'previewImage',
+            'uploadImage',
+            'downloadImage',
+            'getNetworkType',
+            'openLocation',
+            'getLocation',
+            'hideOptionMenu',
+            'showOptionMenu',
+            'closeWindow',
+            'scanQRCode',
+            'chooseWXPay',
+            'openProductSpecificView',
+            'addCard',
+            'chooseCard',
+            'openCard'
+        ]
+    });
+</script>
+<script type="text/javascript" src="/js/demo.js"></script>
+</body>
+</html>
